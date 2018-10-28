@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_10_06_074542) do
 
-  create_table "trips", options: "ENGINE=MyISAM DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "trips", force: :cascade do |t|
     t.date "date"
     t.integer "number"
     t.integer "budget"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2018_10_06_074542) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", options: "ENGINE=MyISAM DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
